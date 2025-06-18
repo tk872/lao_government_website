@@ -1,3 +1,28 @@
+/* Container for scrolling text - hides overflowing text */
+.scroll-container {
+    width: 100%; /* Or a specific width */
+    overflow: hidden; /* Hides text outside the container */
+    white-space: nowrap; /* Prevents text from wrapping */
+    box-sizing: border-box; /* Include padding and border in the element's total width */
+    margin: 10px 0; /* Add some space above/below */
+    background-color: #f8f8f8; /* Optional: background for the scroll area */
+    padding: 5px 0; /* Optional: padding for the scroll area */
+}
+
+/* Animation for scrolling from left to right */
+@keyframes scroll-right {
+    0%   { transform: translateX(-100%); } /* Start off-screen to the left */
+    100% { transform: translateX(100%); }  /* End off-screen to the right */
+}
+
+/* Apply to the text element */
+.scroll-text {
+    display: inline-block; /* Make it behave like a block but only take content width */
+    animation: scroll-right 10s linear infinite; /* Adjust time (10s) for speed */
+    /* Add any other styles for your H1/H2 tags here */
+    font-size: 2em; /* Example font size */
+    color: #004d99;
+}
 /* Animation for blinking effect */
 @keyframes blink {
     0% { opacity: 1; }
