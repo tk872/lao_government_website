@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="lo">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ຄະນະລັດຖະບານລາວແຕ່ລະຊຸດ & ເກມ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>ຄະນະລັດຖະບານ ສປປ ລາວ</h1>
+            <nav>
+                <ul>
+                    <li><a href="#overview">ພາບລວມ</a></li>
+                    <li><a href="#government-sets">ລັດຖະບານແຕ່ລະຊຸດ</a></li>
+                    <li><a href="#quiz-game">ເກມທົດສອບ</a></li>
+                    <li><a href="#about">ກ່ຽວກັບ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section id="overview" class="section-card">
+            <h2>ປະຫວັດສາດລັດຖະບານລາວ</h2>
+            <p>ສຶກສາຂໍ້ມູນກ່ຽວກັບຄະນະລັດຖະບານຂອງ ສປປ ລາວ ຕັ້ງແຕ່ອະດີດຈົນເຖິງປັດຈຸບັນ.</p>
+            <p>ເວັບໄຊນີ້ມີຈຸດປະສົງເພື່ອໃຫ້ຄວາມຮູ້ກ່ຽວກັບການຈັດຕັ້ງລັດຖະບານ ແລະ ບຸກຄະລາກອນສຳຄັນໃນແຕ່ລະຊຸດ.</p>
+            </section>
+
+        <section id="government-sets" class="section-card">
+            <h2>ຄະນະລັດຖະບານແຕ່ລະຊຸດ</h2>
+            <p>ເລືອກຊຸດລັດຖະບານທີ່ທ່ານຕ້ອງການສຶກສາ:</p>
+            <select id="government-set-selector">
+                <option value="">ເລືອກຊຸດລັດຖະບານ...</option>
+                <option value="set_9">ຊຸດທີ 9 (ປັດຈຸບັນ)</option>
+                <option value="set_8">ຊຸດທີ 8</option>
+                </select>
+
+            <div id="set-details" class="set-details-card">
+                <h3 id="set-title">ຊຸດທີ 9 (ປີ 2021-2026)</h3>
+                <p id="set-date">ວັນທີປັບປຸງຂໍ້ມູນ: 06/06/2025</p>
+                <div id="set-members-grid" class="members-grid">
+                    </div>
+            </div>
+        </section>
+
+        <section id="quiz-game" class="section-card">
+            <h2>ເກມທົດສອບຄວາມຮູ້</h2>
+            <p>ມາທົດສອບຄວາມຮູ້ກ່ຽວກັບບຸກຄະລາກອນລັດຖະບານລາວ!</p>
+            <div class="game-container">
+                <h3 id="quiz-question-image">ຮູບພາບຈະສະແດງຢູ່ບ່ອນນີ້:</h3>
+                <img id="quiz-member-img" src="" alt="ຮູບພາບເຈົ້າໜ້າທີ່" class="quiz-image">
+                <p id="quiz-question-text">ນີ້ແມ່ນຮູບຂອງໃຜ?</p>
+                <div id="quiz-options-container" class="options-grid">
+                    </div>
+                <button id="quiz-next-btn" class="button">ຄຳຖາມຕໍ່ໄປ</button>
+                <p id="quiz-feedback"></p>
+                <p>ຄະແນນ: <span id="quiz-score">0</span> / <span id="quiz-total">0</span></p>
+            </div>
+        </section>
+
+        <section id="about" class="section-card">
+            <h2>ກ່ຽວກັບເວັບໄຊ</h2>
+            <p>ເວັບໄຊນີ້ສ້າງຂຶ້ນເພື່ອເປັນແຫຼ່ງຂໍ້ມູນກ່ຽວກັບຄະນະລັດຖະບານ ສປປ ລາວ ແຕ່ລະຊຸດ, ເພື່ອຄວາມເຂົ້າໃຈທີ່ງ່າຍຂຶ້ນ.</p>
+            <p><b>ໝາຍເຫດ:</b> ຂໍ້ມູນໃນເວັບໄຊນີ້ແມ່ນໄດ້ມາຈາກການລວບລວມ ແລະ ອາດຈະມີການປ່ຽນແປງຕາມເວລາ. ກະລຸນາອ້າງອີງຂໍ້ມູນທາງການຈາກພາກລັດ.</p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 ຂໍ້ມູນຄະນະລັດຖະບານລາວ. ສະຫງວນລິຂະສິດ.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
