@@ -1,3 +1,17 @@
+/* Animation for blinking effect */
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.blink-text {
+    animation: blink 1s infinite; /* 1 second duration, repeats infinitely */
+    /* Add any other styles for your H1/H2 tags here */
+    color: #004d99; /* Example color */
+    font-size: 2.5em; /* Example font size */
+    text-align: center;
+}
 /* General Styles */
 body {
     font-family: 'Noto Sans Lao', sans-serif; /* ໃຊ້ຟອນລາວທີ່ເໝາະສົມ */
